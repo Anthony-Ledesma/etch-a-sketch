@@ -14,3 +14,10 @@ function createGrid() {
     }
 };
 createGrid();
+
+const squares = document.querySelectorAll('.grid-square');
+for (let i = 0; i < squares.length; i++) {
+    squares[i].addEventListener('mouseover', () => {
+        squares[i].style.backgroundColor = '#000000';
+    })
+}
